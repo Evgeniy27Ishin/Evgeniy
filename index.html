@@ -6,74 +6,28 @@
     <title>Documents</title>
 </head>
 <body>
-<div id="wrapper">
-				<div class="eye1"></div>
-				<div class="eye2"></div>
-				<div class="noise"></div>
-				<div class="mouth1"></div>
-				<div class="mouth2"></div>
-			</div>
+<div id="parent">
+	<div id="child"></div>
+</div>
 </body>
 <style>
-#wrapper {
+#parent {
 	position: relative;
-	width: 400px;
-	height: 400px;
-	margin: 0 auto;
-	background-color: #C4CD14;
-	border-radius: 200px;
+	top: 100px;
+	left: 200px;
+	
+	width: 500px;
+	height: 300px;
+	border: 1px solid red;
 }
-
-.eye1 {
-	background-color: #fff;
+#child {
 	position: absolute;
-	right: 80px;
-	top: 70px;
-	width: 80px;
-	height: 80px;
-	border-radius: 40px;
-	z-index: 3;
-}
-.eye2 {
-	background-color: #fff;
-	position: absolute;
-	left: 80px;
-	top: 70px;
-	width: 80px;
-	height: 80px;
-	border-radius: 40px;
-	z-index: 3;
-}
-
-.noise {
-	background-color: #fff;
-	position: absolute;
-	left: 165px;
-	top: 200px;
-	width: 70px;
-	height: 70px;
-	z-index: 3;
-	border-radius: 35px;
-}
-.mouth1 {
-	background-color: #fff;
-	position: absolute;
-	left: 100px;
-	top: 155px;
+	top: 0;
+	left: 0;
+	
 	width: 200px;
 	height: 200px;
-	border-radius: 100px;
-	z-index: 1;
-}
-.mouth2 {
-	background-color: #C4CD14;
-	position: absolute;
-	left: 50px;
-	top: 30px;
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	z-index: 2;
+	border: 1px solid green;
 }
 </style>
 <body>
